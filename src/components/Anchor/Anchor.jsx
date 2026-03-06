@@ -2,7 +2,7 @@ import { useFadeUp } from '../../hooks/useFadeUp.js'
 import { GoldDivider, CtaButton } from '../Shared.jsx'
 import styles from './Anchor.module.css'
 
-const HOTMART_URL = 'https://go.hotmart.com/W104663342F'
+const HOTMART_URL = 'https://pay.hotmart.com/W104663342F?off=em4hgv75'
 
 const rows = [
     { label: 'Sessão com mentora de mindset', price: 'R$ 300 – R$ 800' },

@@ -60,7 +60,7 @@ export default function Authority() {
                     espiritualidade. Uma tecnologia que coloca essa fórmula na palma da sua mão.
                 </p>
                 <a
-                    href="https://go.hotmart.com/W104663342F"
+                    href="https://pay.hotmart.com/W104663342F?off=em4hgv75"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-cta"

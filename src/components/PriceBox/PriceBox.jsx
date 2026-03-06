@@ -3,7 +3,8 @@ import { CtaButton } from '../Shared.jsx'
 import Countdown from '../Countdown/Countdown.jsx'
 import styles from './PriceBox.module.css'
 
-const HOTMART_URL = 'https://go.hotmart.com/W104663342F'
+const URL_ANUAL = 'https://pay.hotmart.com/W104663342F?off=em4hgv75'
+const URL_MENSAL = 'https://pay.hotmart.com/W104663342F?off=1nvmg5l8'
 
 // Lista unificada de features — mesma em todos os planos
 const ALL_FEATURES = [
@@ -29,7 +30,9 @@ const plans = [
         price: 'R$ 49,90',
         period: 'por mês',
         daily: null,
+        installment: null,
         included: [0],
+        url: URL_MENSAL,
         cta: 'Começar agora',
         gold: false,
         highlight: false,
@@ -42,7 +45,9 @@ const plans = [
         price: 'R$ 397,90',
         period: 'por ano',
         daily: 'menos de R$ 1,09 / dia',
+        installment: '10x de R$ 50,15',
         included: [0, 1, 2, 3, 4],
+        url: URL_ANUAL,
         cta: 'Quero o anual agora',
         gold: true,
         highlight: true,
@@ -74,6 +79,7 @@ export default function PriceBox() {
                             <p className={styles.period}>{plan.period}</p>
 
                             {plan.daily && <p className={styles.daily}>{plan.daily}</p>}
+                            {plan.installment && <p className={styles.installment}>{plan.installment}</p>}
 
                             <ul className={styles.features}>
                                 {ALL_FEATURES.map((f, i) => {
@@ -93,7 +99,7 @@ export default function PriceBox() {
                                 })}
                             </ul>
 
-                            <CtaButton href={HOTMART_URL} gold={plan.gold}>
+                            <CtaButton href={plan.url} gold={plan.gold}>
                                 {plan.cta}
                             </CtaButton>
                         </div>

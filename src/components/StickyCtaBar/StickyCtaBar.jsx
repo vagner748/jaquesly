@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import styles from './StickyCtaBar.module.css'
 
-const HOTMART_URL = 'https://go.hotmart.com/W104663342F'
+const HOTMART_URL = 'https://pay.hotmart.com/W104663342F?off=em4hgv75'
 
 export default function StickyCtaBar() {
     const [visible, setVisible] = useState(false)

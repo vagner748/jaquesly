@@ -118,6 +118,12 @@
     font-style: italic;
     color: var(--gold-light);
     opacity: 0.9;
+    margin-bottom: 4px;
+}
+
+.installment {
+    font-size: 0.82rem;
+    color: rgba(212, 175, 55, 0.75);
     margin-bottom: 8px;
 }
 

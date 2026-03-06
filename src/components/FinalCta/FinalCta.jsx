@@ -1,7 +1,7 @@
 import { StarIcon, CtaButton } from '../Shared.jsx'
 import styles from './FinalCta.module.css'
 
-const HOTMART_URL = 'https://go.hotmart.com/W104663342F'
+const HOTMART_URL = 'https://pay.hotmart.com/W104663342F?off=em4hgv75'
 
 export default function FinalCta() {
     return (

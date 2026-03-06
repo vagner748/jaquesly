@@ -1,7 +1,7 @@
 import styles from './Hero.module.css'
 import { StarIcon, GoldDivider, CtaButton } from '../Shared.jsx'
 
-const HOTMART_URL = 'https://go.hotmart.com/W104663342F'
+const HOTMART_URL = 'https://pay.hotmart.com/W104663342F?off=em4hgv75'
 
 const particles = Array.from({ length: 18 }, (_, i) => ({
     id: i,

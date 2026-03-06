@@ -68,7 +68,7 @@ export default function Faq() {
                     <p className={styles.ctaLabel}>Afirmações Positivas Personalizadas</p>
                     <p className={styles.ctaPrice}>R$ 397,90 / ano</p>
                     <a
-                        href="https://go.hotmart.com/W104663342F"
+                        href="https://pay.hotmart.com/W104663342F?off=em4hgv75"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn-cta"
