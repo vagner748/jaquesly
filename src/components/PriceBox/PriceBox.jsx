@@ -47,19 +47,6 @@ const plans = [
         gold: true,
         highlight: true,
     },
-    {
-        id: 'trimestral',
-        badge: null,
-        name: 'Trimestral',
-        original: null,
-        price: 'R$ 119,70',
-        period: 'a cada 3 meses',
-        daily: 'R$ 1,33 / dia',
-        included: [0, 1, 2],
-        cta: 'Quero o trimestral',
-        gold: false,
-        highlight: false,
-    },
 ]
 
 export default function PriceBox() {
