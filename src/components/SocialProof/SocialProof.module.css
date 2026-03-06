@@ -1,0 +1,50 @@
+.section {
+    background: linear-gradient(160deg, #2A0018, #1C0010);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: var(--white-10);
+    border: 1px solid rgba(212, 175, 55, 0.18);
+    border-radius: 16px;
+    padding: 28px 24px;
+    position: relative;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.card::before {
+    content: '\201C';
+    font-family: var(--font-serif);
+    font-size: 64px;
+    color: var(--gold);
+    opacity: 0.6;
+    position: absolute;
+    top: 8px;
+    left: 18px;
+    line-height: 1;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(212, 175, 55, 0.4);
+}
+
+.text {
+    font-style: italic;
+    color: var(--white-80);
+    line-height: 1.7;
+    margin-top: 24px;
+    font-size: 0.95rem;
+}
+
+.author {
+    margin-top: 16px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--gold-light);
+}

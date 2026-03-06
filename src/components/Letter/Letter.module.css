@@ -1,0 +1,32 @@
+.section {
+    background: linear-gradient(160deg, #1C0010, #2A0018);
+}
+
+.content {
+    max-width: 680px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    line-height: 1.85;
+    color: var(--white-80);
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+.signature {
+    font-family: var(--font-serif);
+    font-size: 1.3rem;
+    font-style: italic;
+    color: var(--gold-light);
+    margin-top: 32px;
+}
+
+.signature small {
+    display: block;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    color: var(--white-80);
+    font-style: normal;
+    margin-top: 4px;
+}

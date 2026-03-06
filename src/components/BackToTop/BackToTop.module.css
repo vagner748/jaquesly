@@ -1,0 +1,32 @@
+.btn {
+    position: fixed;
+    bottom: 80px;
+    /* acima da sticky bar */
+    right: 24px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(212, 175, 55, 0.15);
+    border: 1px solid rgba(212, 175, 55, 0.4);
+    color: var(--gold-light);
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 998;
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.3s, transform 0.3s, background 0.2s;
+    backdrop-filter: blur(8px);
+}
+
+.btn.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.btn:hover {
+    background: rgba(212, 175, 55, 0.3);
+}

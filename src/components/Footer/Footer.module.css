@@ -1,0 +1,21 @@
+.footer {
+    background: #120008;
+    text-align: center;
+    padding: 32px 24px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.link {
+    margin-top: 8px;
+}
+
+.link a {
+    color: rgba(212, 175, 55, 0.5);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.link a:hover {
+    color: var(--gold-light);
+}

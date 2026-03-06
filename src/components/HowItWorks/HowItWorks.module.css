@@ -1,0 +1,86 @@
+.section {
+    background: linear-gradient(160deg, #380020, #2A0018);
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+/* ── Cada step: oculto por padrão, revela ao entrar na tela ── */
+.step {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 0 0 0 0;
+    position: relative;
+
+    /* Estado inicial: invisível + acima da posição */
+    opacity: 0;
+    transform: translateY(-28px);
+    transition:
+        opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+        transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Classe adicionada pelo IntersectionObserver */
+.stepVisible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ── Coluna esquerda: ícone + linha ── */
+.iconWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.icon {
+    min-width: 48px;
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, var(--gold-light), var(--gold));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+    animation: glowPulse 3s ease-in-out infinite;
+}
+
+/* Linha conectora entre ícones */
+.line {
+    display: block;
+    width: 2px;
+    flex: 1;
+    min-height: 40px;
+    background: linear-gradient(to bottom, var(--gold), transparent);
+    margin: 6px 0;
+}
+
+/* ── Conteúdo do passo ── */
+.content {
+    padding-bottom: 32px;
+    padding-top: 8px;
+}
+
+.stepTitle {
+    font-family: var(--font-serif);
+    font-size: 1.15rem;
+    color: var(--white);
+    margin-bottom: 6px;
+}
+
+.stepText {
+    color: var(--white-80);
+    font-size: 0.93rem;
+    line-height: 1.65;
+}
