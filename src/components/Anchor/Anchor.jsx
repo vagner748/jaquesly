@@ -27,7 +27,7 @@ export default function Anchor() {
                     ))}
                     <div className={`${styles.row} ${styles.highlight}`}>
                         <span className={styles.label}>Afirmações Positivas Personalizadas</span>
-                        <span className={styles.price}>R$ 432 / ano</span>
+                        <span className={styles.price}>R$ 397,90 / ano</span>
                     </div>
                 </div>
                 <p className={styles.note}>Menos do que um café por dia. Com o poder de transformar a sua vida.</p>

@@ -29,7 +29,7 @@ const faqs = [
     },
     {
         q: 'Quanto custa?',
-        a: 'R$ 432,00 por ano. Menos de R$ 1,20 por dia. Com garantia de 7 dias e acesso imediato.',
+        a: 'R$ 397,90 por ano. Menos de R$ 1,09 por dia. Com garantia de 7 dias e acesso imediato.',
     },
 ]
 
@@ -66,7 +66,7 @@ export default function Faq() {
 
                 <div className={styles.ctaBlock}>
                     <p className={styles.ctaLabel}>Afirmações Positivas Personalizadas</p>
-                    <p className={styles.ctaPrice}>R$ 432,00 / ano</p>
+                    <p className={styles.ctaPrice}>R$ 397,90 / ano</p>
                     <a
                         href="https://go.hotmart.com/W104663342F"
                         target="_blank"
